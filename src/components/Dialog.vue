@@ -1,23 +1,25 @@
 <template>
-  <!-- 对话框遮罩 -->
-  <div class="zh-dialog__wrapper" v-show="visible" @click.self="handleClose">
-    <div class="zh-dialog" :style="{ width: width, marginTop: top }">
-      <div class="zh-dialog__header">
-        <slot name="title">
-          <span class="zh-dialog__title">{{ title }}</span>
-        </slot>
-        <button class="zh-dialog__headerbtn" @click="handleClose">
-          <i class="zh-icon-guanbi"></i>
-        </button>
-      </div>
-      <div class="zh-dialog__body">
-        <slot></slot>
-      </div>
-      <div class="zh-dialog__footer" v-if="$slots.footer">
-        <slot name="footer"></slot>
+  <transition name="dialog-fade">
+    <!-- 对话框遮罩 -->
+    <div class="zh-dialog__wrapper" v-show="visible" @click.self="handleClose">
+      <div class="zh-dialog" :style="{ width: width, marginTop: top }">
+        <div class="zh-dialog__header">
+          <slot name="title">
+            <span class="zh-dialog__title">{{ title }}</span>
+          </slot>
+          <button class="zh-dialog__headerbtn" @click="handleClose">
+            <i class="zh-icon-guanbi"></i>
+          </button>
+        </div>
+        <div class="zh-dialog__body">
+          <slot></slot>
+        </div>
+        <div class="zh-dialog__footer" v-if="$slots.footer">
+          <slot name="footer"></slot>
+        </div>
       </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -50,6 +52,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.dialog-fade-enter-active {
+  animation: fade 0.3s;
+}
+.dialog-fade-leave-active {
+  animation: fade 0.3s reverse;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .zh-dialog__wrapper {
   position: fixed;
   top: 0;

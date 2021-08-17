@@ -2,7 +2,7 @@
   <div
     class="zh-button"
     :class="[
-      `zh-button--${type}`,
+      type ? `zh-button--${type}` : '',
       {
         'is-plain': plain,
         'is-circle': circle,
