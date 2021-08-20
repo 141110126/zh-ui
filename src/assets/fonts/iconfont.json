@@ -1,23 +1,58 @@
 {
-  "id": "2745368",
-  "name": "zh-ui",
+  "id": "2308826",
+  "name": "组件库",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
     {
-      "icon_id": "9673157",
-      "name": "关  闭",
-      "font_class": "guanbi",
-      "unicode": "e607",
-      "unicode_decimal": 58887
+      "icon_id": "10226563",
+      "name": "清除",
+      "font_class": "qingchu1",
+      "unicode": "e643",
+      "unicode_decimal": 58947
     },
     {
-      "icon_id": "10292039",
+      "icon_id": "31068",
+      "name": "眼睛",
+      "font_class": "yanjing",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "6271763",
+      "name": "关  闭",
+      "font_class": "guanbi1",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "3143743",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "6382132",
       "name": "删 除",
-      "font_class": "shanchu",
-      "unicode": "e614",
-      "unicode_decimal": 58900
+      "font_class": "del",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "8033355",
+      "name": "收 藏",
+      "font_class": "shoucang",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "15266985",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e653",
+      "unicode_decimal": 58963
     }
   ]
 }

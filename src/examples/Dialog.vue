@@ -12,6 +12,7 @@
       </template>
       <template v-slot:footer>
         <zh-button type="primary">确定</zh-button>
+        <zh-button>取消</zh-button>
       </template>
     </zh-dialog>
   </div>

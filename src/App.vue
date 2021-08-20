@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <!-- <demo-button /> -->
-    <demo-dialog />
+    <!-- <examples-button /> -->
+    <!-- <examples-dialog/> -->
+    <!-- <examples-input /> -->
+    <examples-switch />
   </div>
 </template>
 
 <script>
-// import DemoButton from "./demo/Button.vue";
-import DemoDialog from "./demo/Dialog.vue";
+// import ExamplesButton from "./examples/Button.vue";
+// import ExamplesDialog from "./examples/Dialog.vue";
+// import ExamplesInput from "./examples/Input.vue";
+import ExamplesSwitch from "./examples/Switch.vue";
 
 export default {
   name: "App",
   components: {
-    // DemoButton,
-    DemoDialog,
+    // ExamplesButton,
+    // ExamplesDialog,
+    // ExamplesInput,
+    ExamplesSwitch,
   },
 };
 </script>

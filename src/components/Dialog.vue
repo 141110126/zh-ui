@@ -8,7 +8,7 @@
             <span class="zh-dialog__title">{{ title }}</span>
           </slot>
           <button class="zh-dialog__headerbtn" @click="handleClose">
-            <i class="zh-icon-guanbi"></i>
+            <i class="zh-icon-guanbi1"></i>
           </button>
         </div>
         <div class="zh-dialog__body">
@@ -116,7 +116,7 @@ export default {
       padding: 10px 20px 20px;
       text-align: right;
       box-sizing: border-box;
-      .zh-button:first-child {
+      ::v-deep .zh-button:first-child {
         margin-right: 20px;
       }
     }
