@@ -1,29 +1,19 @@
 # zh-ui
 
-## Project setup
-```
-npm install
-```
+# 基本介绍
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+UI 组件库
+封装常见的功能性组件：Button、Dialog、Input、Switch、Form、FormItem
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# 使用
 
-### Run your unit tests
-```
-npm run test:unit
-```
+- 安装
+  npm i zh-ui
 
-### Lints and fixes files
-```
-npm run lint
-```
+- 全局导入
+  import ZhUI from 'zh-ui'
+  import "zh-ui/lib/zh-ui.css";
+  Vue.use(ZhUI)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 使用组件
+  <zh-button>按钮</zh-button>
