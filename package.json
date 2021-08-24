@@ -1,13 +1,17 @@
 {
-  "name": "zh-ui",
+  "name": "zh-vue-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/zh-ui.umd.min.js",
+  "author": {
+    "name": "鸡血园地"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib"
+    "lib": "vue-cli-service build --target lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
